@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Rémi Dubuc</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="../Images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">RD Portfolio</div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mobile-nav">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="bilan.html">Bilan</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content contact-page">
+      <div class="container">
+        <div class="page-title-section">
+          <h1>Me Contacter</h1>
+          <p>N'hésitez pas à me contacter pour toute question ou opportunité</p>
+          <div class="title-underline"></div>
+        </div>
+
+        <section class="contact-grid">
+          <div class="contact-sidebar">
+            <div class="info-card">
+              <h2>Informations de contact</h2>
+
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div class="text-group">
+                  <h4>Email</h4>
+                  <p>remi.dubuc.iut@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="text-group">
+                  <h4>Localisation</h4>
+                  <p>Blagnac, France</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-card">
+              <h2>Réseaux sociaux</h2>
+              <div class="social-links-grid">
+                <a
+                  href="https://www.linkedin.com/in/remi-dubuc"
+                  class="social-link-item"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-area">
+            <div class="form-card">
+              <h2>Envoyer un message</h2>
+
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="nom">Nom complet</label>
+                  <input
+                    type="text"
+                    id="nom"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="sujet">Sujet</label>
+                  <input
+                    type="text"
+                    id="sujet"
+                    placeholder="Sujet de votre message"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Votre message..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  id="sendBtn"
+                  class="btn primary send-message-btn"
+                >
+                  <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>À propos</h3>
+            <p>Dubuc Rémi - Étudiant en Informatique</p>
+            <p>Spécialisé en Réseaux & Cybersécurité</p>
+          </div>
+          <div class="footer-links">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="cv.html">Mon CV</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Suivez-moi</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/remi-dubuc"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="contact.html" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2026 Dubuc Rémi. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const nom = document.getElementById("nom").value;
+          const sujet = document.getElementById("sujet").value;
+          const message = document.getElementById("message").value;
+
+          // ADRESSE DE DESTINATION - REMPLACEZ VOTRE.EMAIL@EXAMPLE.COM
+          const recipientEmail = "votre.email@example.com";
+
+          // 1. CORPS DU MESSAGE : Ne contient que les informations essentielles.
+          const bodyContent = `Nom de l'expéditeur: ${nom}\n\n` + `${message}`; // Message de l'utilisateur directement après le Nom
+
+          // 2. OBJET DU MAIL : Utilise le sujet saisi par l'utilisateur
+          const mailSubject = sujet; // Pas de préfixe [PORTFOLIO CONTACT]
+
+          // Encoder l'URL
+          const encodedSubject = encodeURIComponent(mailSubject);
+          const encodedBody = encodeURIComponent(bodyContent);
+
+          // Construction du lien Webmail pour Gmail.
+          const gmailLink =
+            `https://mail.google.com/mail/u/0/?view=cm&fs=1` +
+            `&to=${recipientEmail}` +
+            `&su=${encodedSubject}` +
+            `&body=${encodedBody}`;
+
+          // Ouvrir le lien dans une nouvelle fenêtre
+          window.open(gmailLink, "_blank");
+
+          // Optionnel: Réinitialiser le formulaire
+          // this.reset();
+        });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector("#mobile-nav");
+
+        hamburgerBtn.addEventListener("click", function () {
+          // Basculer la classe 'is-open' sur la balise nav pour l'afficher/masquer
+          navMenu.classList.toggle("is-open");
+
+          // Mise à jour de l'attribut aria-expanded pour l'accessibilité
+          const isExpanded =
+            hamburgerBtn.getAttribute("aria-expanded") === "true" || false;
+          hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
+        });
+      });
+    </script>
+  </body>
+</html>

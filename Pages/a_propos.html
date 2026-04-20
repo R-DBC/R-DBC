@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À Propos - Rémi Dubuc</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="../Images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">RD Portfolio</div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mobile-nav">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="a_propos.html" class="active">À propos</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="bilan.html">Bilan</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="about-page">
+      <div class="container about-container">
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <img
+              src="../Images/img_profil_coupe.jpg"
+              alt="Dubuc Rémi"
+              class="sidebar-photo"
+            />
+            <h3>Rémi Dubuc</h3>
+            <p class="sidebar-subtitle">Étudiant en informatique</p>
+
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Blagnac, France</p>
+              <p><i class="fas fa-envelope"></i> remi.dubuc.iut@gmail.com</p>
+            </div>
+
+            <a href="cv.html" class="btn primary cv-button">
+              <i class="fas fa-download"></i> Télécharger CV
+            </a>
+          </div>
+        </aside>
+
+        <section class="content-section">
+          <h1>À propos de moi</h1>
+
+          <div class="about-block">
+            <h2>Biographie</h2>
+            <p>
+              Passionné par la sécurité informatique et les réseaux, je suis
+              actuellement étudiant en informatique avec une spécialisation en
+              cybersécurité. Mon objectif est de contribuer à la protection des
+              infrastructures numériques et de développer des solutions
+              innovantes pour sécuriser les systèmes d'information.
+            </p>
+            <p>
+              Actuellement en BUT Réseaux & Télécommunications, je continue à
+              approfondir mes connaissances en sécurité des systèmes
+              d'information et en architecture réseau. Je suis particulièrement
+              passionné par les défis techniques et la résolution de problèmes
+              complexes dans le domaine de la cybersécurité et de la sécurité
+              des réseaux.
+            </p>
+          </div>
+
+          <div class="about-block">
+            <h2>Compétences techniques</h2>
+
+            <div class="skill-bar">
+              <p>Linux</p>
+              <div class="bar-container">
+                <div class="bar" data-level="80"></div>
+              </div>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <p>Réseaux (TCP/IP)</p>
+              <div class="bar-container">
+                <div class="bar" data-level="75"></div>
+              </div>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <p>Configuration équipements Cisco</p>
+              <div class="bar-container">
+                <div class="bar" data-level="80"></div>
+              </div>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <p>Virtualisation</p>
+              <div class="bar-container">
+                <div class="bar" data-level="75"></div>
+              </div>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <p>Iot & Embarqué</p>
+              <div class="bar-container">
+                <div class="bar" data-level="65"></div>
+              </div>
+              <span>65%</span>
+            </div>
+            <div class="skill-bar">
+              <p>Cybersécurité</p>
+              <div class="bar-container">
+                <div class="bar" data-level="60"></div>
+              </div>
+              <span>60%</span>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <h2>Outils & Technologies</h2>
+            <div class="tech-tags">
+              <span class="tag">Kali Linux</span>
+              <span class="tag">Wireshark</span>
+              <span class="tag">Nmap</span>
+              <span class="tag">MQTT</span>
+              <span class="tag">Node-RED</span>
+              <span class="tag">Arduino / Raspberry Pi</span>
+              <span class="tag">Cisco Packet Tracer</span>
+              <span class="tag">Docker</span>
+              <span class="tag">VMware Workstation / VirtualBox</span>
+            </div>
+          </div>
+
+          <div class="about-block">
+            <h2>Certifications</h2>
+
+            <div class="certification-grid">
+              <div class="certification-card">
+                <h4>CCNA : Introduction to Networks</h4>
+                <p>Cisco • 2025</p>
+
+                <div class="certification-badge">
+                  <a
+                    href="https://www.credly.com/badges/364ef4cf-edc2-4261-bd8e-4ed587607324/public_url"
+                    target="_blank"
+                    aria-label="Lien de vérification du badge"
+                  >
+                    <img
+                      src="../Images/ccna-introduction-to-networks.png"
+                      alt="Badge Cisco Networking Academy CCNA Introduction to Networks"
+                      class="badge-image"
+                    />
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/364ef4cf-edc2-4261-bd8e-4ed587607324/public_url"
+                    target="_blank"
+                    class="verification-link-text"
+                  >
+                    <i class="fas fa-check-circle"></i> Vérifier le badge
+                  </a>
+                </div>
+              </div>
+
+              <div class="certification-card">
+                <h4>Ethical Hacker</h4>
+                <p>Cisco • 2025</p>
+
+                <div class="certification-badge">
+                  <a
+                    href="https://www.credly.com/badges/87eeab3a-6760-4f6c-83c5-e0c63b90cb0a"
+                    target="_blank"
+                    aria-label="Lien de vérification du badge"
+                  >
+                    <img
+                      src="../Images/cisco_ethical_hacker.png"
+                      alt="Badge Cisco Networking Academy CCNA Introduction to Networks"
+                      class="badge-image"
+                    />
+                  </a>
+                  <a
+                    href="https://www.credly.com/badges/87eeab3a-6760-4f6c-83c5-e0c63b90cb0a"
+                    target="_blank"
+                    class="verification-link-text"
+                  >
+                    <i class="fas fa-check-circle"></i> Vérifier le badge
+                  </a>
+                </div>
+              </div>
+              <div class="certification-card">
+                <h4>Certified Stormshield Network Administrator</h4>
+                <p>Stormshield • 2025</p>
+
+                <div class="certification-badge">
+                  <a
+                    href="../Images/Certification_stormshiel.pdf"
+                    target="_blank"
+                    aria-label="Voir le certificat PDF Stormshield"
+                  >
+                    <img
+                      src="../Images/logo-stormshield.png"
+                      alt="Miniature du certificat Stormshield CSNA"
+                      class="badge-image"
+                    />
+                  </a>
+
+                  <a
+                    href="../Images/Certification_stormshiel.pdf"
+                    target="_blank"
+                    class="verification-link-text"
+                  >
+                    <i class="fas fa-file-pdf"></i> Télécharger le certificat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <h3>À propos</h3>
+            <p>Dubuc Rémi - Étudiant en Informatique</p>
+            <p>Spécialisé en Réseaux & Cybersécurité</p>
+          </div>
+          <div class="footer-links">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="../index.html">Accueil</a></li>
+              <li><a href="projets.html">Projets</a></li>
+              <li><a href="cv.html">Mon CV</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Suivez-moi</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/remi-dubuc"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+
+              <a href="contact.html" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2026 Dubuc Rémi. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector("#mobile-nav");
+
+        hamburgerBtn.addEventListener("click", function () {
+          // Basculer la classe 'is-open' sur la balise nav pour l'afficher/masquer
+          navMenu.classList.toggle("is-open");
+
+          // Mise à jour de l'attribut aria-expanded pour l'accessibilité
+          const isExpanded =
+            hamburgerBtn.getAttribute("aria-expanded") === "true" || false;
+          hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Sélectionne toutes les barres avec la classe .bar
+        const skillBars = document.querySelectorAll(".skill-bar .bar");
+
+        // Itère sur chaque barre trouvée
+        skillBars.forEach((bar) => {
+          // Récupère la valeur de compétence à partir de l'attribut data-level
+          const level = bar.getAttribute("data-level");
+
+          if (level) {
+            // Applique la largeur en utilisant la propriété CSS 'width'
+            bar.style.width = level + "%";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

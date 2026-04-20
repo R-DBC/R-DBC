@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails Projet - Rémi Dubuc</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../Images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">RD Portfolio</div>
+        <nav id="mobile-nav">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail-container">
+      <a href="projets.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Retour aux projets
+      </a>
+
+      <section class="project-hero-card">
+        <div class="hero-overlay">
+          <span class="category-tag">iot</span>
+          <h1>Géolocalisation Indoor Haute Précision</h1>
+        </div>
+
+        <div class="hero-meta-bar">
+          <div class="meta-top-row">
+            <div class="meta-item">
+              <span class="meta-label">Date</span>
+              <span class="meta-value">2026</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Catégorie</span>
+              <span class="meta-value">Iot</span>
+            </div>
+          </div>
+
+          <div class="meta-tech-section">
+            <h4>Technologies utilisées</h4>
+            <div class="tech-tags-container">
+              <span class="tag-outline">UWB</span>
+              <span class="tag-outline">IoT</span>
+              <span class="tag-outline">MQTT</span>
+              <span class="tag-outline">Node-RED</span>
+              <span class="tag-outline">SQLite</span>
+              <span class="tag-outline">Raspberry Pi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-main-grid">
+        <div class="grid-left">
+          <div class="content-card">
+            <h3>Description détaillée</h3>
+            <p>
+              La SAÉ 512 visait à concevoir un système de géolocalisation indoor
+              (RTLS) haute précision au sein de la Maison Intelligente de
+              Blagnac. En exploitant la technologie UWB (Ultra Wideband) et le
+              protocole MQTT, nous avons mis en place une infrastructure
+              complète sur Raspberry Pi capable de s'affranchir des limites du
+              GPS pour localiser un utilisateur au centimètre près en
+              environnement intérieur.
+            </p>
+          </div>
+
+          <div class="content-card border-accent">
+            <h3><i class="fas fa-book-open"></i> Contexte</h3>
+            <p>
+              Réalisé à la Maison Intelligente de Blagnac (MIB), ce projet
+              s'inscrit dans une problématique de domotique avancée : comment
+              localiser précisément une personne ou un objet dans un
+              environnement où le GPS est inefficace ? Nous avons dû concevoir
+              une Preuve de Concept (POC) de système RTLS (Real-Time Locating
+              System).
+            </p>
+          </div>
+
+          <div class="content-card">
+            <h3><i class="fas fa-bullseye"></i> Objectifs</h3>
+            <ul class="check-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Localisation Indoor :
+                Atteindre une précision centimétrique (inférieure à 30 cm).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Temps Réel : Assurer un flux
+                de données fluide avec une latence minimale.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Historisation : Stocker les
+                coordonnées pour permettre une analyse ultérieure des
+                mouvements.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Valorisation : Créer un
+                portail web centralisant toute la documentation technique.
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-card">
+            <h3><i class="fas fa-cogs"></i> Méthodologie</h3>
+            <p>
+              Pour ce projet, nous avons adopté une approche basée sur la
+              technologie UWB (Ultra Wideband), réputée pour sa résistance aux
+              réflexions murales.
+            </p>
+            <br />
+
+            <ul class="check-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Acquisition : Calcul de
+                position par trilatération via le temps de vol des ondes (ToF).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Transmission : Flux de
+                données JSON via broker MQTT (Mosquitto).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Traitement : Orchestration
+                des flux sous Node-RED virtualisé via Docker.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Stockage : Historisation
+                locale dans une base SQLite pour garantir l'autonomie du
+                système.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-right">
+          <div class="content-card">
+            <h3>Défis rencontrés</h3>
+            <ul class="bullet-list">
+              <li>
+                <strong>Migration Système :</strong> Le passage d'une machine
+                virtuelle (VM) au Raspberry Pi en milieu de projet a demandé une
+                reconfiguration complète des conteneurs Docker.
+              </li>
+              <li>
+                <strong>Optimisation du stockage :</strong> Initialement, nous
+                visions une base InfluxDB. Face à la complexité de mise en œuvre
+                sur le terrain, j'ai piloté le basculement vers SQLite (.db),
+                une solution plus légère et parfaitement adaptée aux ressources
+                du Pi.
+              </li>
+              <li>
+                <strong>Interférences physiques :</strong> Le mobilier
+                métallique de la MIB perturbait parfois les signaux. Nous avons
+                dû ajuster la hauteur des ancres pour optimiser la "Line of
+                Sight" (ligne de vue).
+              </li>
+            </ul>
+          </div>
+          <div class="content-card apprenticeships-card">
+            <h3><i class="fas fa-lightbulb"></i> Apprentissages</h3>
+            <p>
+              Ce projet a validé ma capacité à piloter une infrastructure IoT de
+              bout en bout. J'ai renforcé mes compétences en administration
+              système (Linux/Docker), en gestion de protocoles de messagerie
+              (MQTT) et en développement de solutions de suivi en temps réel.
+            </p>
+          </div>
+        </div>
+      </div>
+      <section class="content-card project-gallery">
+        <h3><i class="fas fa-images"></i> Captures d'écran & Schémas</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="../Images/sae512_archi.drawio.png"
+              alt="Architecture du projet"
+            />
+            <p>Architecture du projet</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../Images/sae512_localisation.png"
+              alt="Schéma localisation des noeuds"
+            />
+            <p>Schéma localisation des noeuds</p>
+          </div>
+        </div>
+      </section>
+      <section class="content-card results-card">
+        <h3><i class="fas fa-trophy"></i> Résultats</h3>
+        <p>
+          L'implémentation de cette solution a permis d'atteindre une précision
+          de localisation comprise entre 10 et 20 cm, confirmant la supériorité
+          de l'UWB sur le Bluetooth pour ce type d'usage. Le système affiche une
+          latence inférieure à une seconde, garantissant un suivi fluide et une
+          mise à jour instantanée des positions sur l'interface de
+          visualisation. Enfin, l'intégralité des déplacements est désormais
+          historisée dans une base de données locale, rendant le dispositif
+          totalement autonome, mobile et prêt pour une exploitation concrète en
+          domotique ou en assistance à la personne.
+        </p>
+        <div class="project-actions" style="margin-top: 20px">
+          <a
+            href="https://mib-leaps-sae512.webnode.fr/"
+            target="_blank"
+            class="action-btn web-btn"
+          >
+            <i class="fas fa-external-link-alt"></i> Consulter le site du projet
+          </a>
+        </div>
+      </section>
+
+      <div class="bottom-actions">
+        <a href="projets.html" class="btn-primary-back"
+          >Retour à tous les projets</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-copyright">
+          <p>&copy; 2026 Dubuc Rémi. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

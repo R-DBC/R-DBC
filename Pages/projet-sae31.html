@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détails Projet - Rémi Dubuc</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../Images/logo.png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">RD Portfolio</div>
+        <nav id="mobile-nav">
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="projets.html" class="active">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="project-detail-container">
+      <a href="projets.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Retour aux projets
+      </a>
+
+      <section class="project-hero-card">
+        <div class="hero-overlay">
+          <span class="category-tag">Télécom</span>
+          <h1>Conception d’un système en modulation ASK</h1>
+        </div>
+
+        <div class="hero-meta-bar">
+          <div class="meta-top-row">
+            <div class="meta-item">
+              <span class="meta-label">Date</span>
+              <span class="meta-value">2025</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Catégorie</span>
+              <span class="meta-value">Télécom</span>
+            </div>
+          </div>
+
+          <div class="meta-tech-section">
+            <h4>Technologies utilisées</h4>
+            <div class="tech-tags-container">
+              <span class="tag-outline">GNU Radio</span>
+              <span class="tag-outline">Modulation ASK / OOK</span>
+              <span class="tag-outline">Traitement du Signal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-main-grid">
+        <div class="grid-left">
+          <div class="content-card">
+            <h3>Description détaillée</h3>
+            <p>
+              Ce projet consistait à concevoir et déployer un système de
+              transmission numérique basé sur la modulation
+              <strong>ASK (Amplitude Shift Keying)</strong>. L'objectif était de
+              coder des données binaires en faisant varier l'amplitude d'une
+              onde porteuse sinusoïdale. C'était une immersion concrète dans le
+              traitement du signal, où nous avons dû transformer des concepts
+              théoriques en un flux de données réel et visualisable.
+            </p>
+          </div>
+
+          <div class="content-card border-accent">
+            <h3><i class="fas fa-book-open"></i> Contexte</h3>
+            <p>
+              Dans le domaine des télécommunications, la modulation est
+              essentielle pour transmettre des données via des canaux radio ou
+              câblés. Pour cette SAÉ, nous avons choisi d'étudier la modulation
+              ASK pour sa simplicité de mise en œuvre, très utilisée dans des
+              technologies quotidiennes comme les télécommandes ou les systèmes
+              RFID
+            </p>
+          </div>
+
+          <div class="content-card">
+            <h3><i class="fas fa-bullseye"></i> Objectifs</h3>
+            <ul class="check-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Concevoir un système de
+                transmission numérique complet basé sur la modulation ASK.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Maîtriser l'outil de
+                simulation GNU Radio pour la création de blocs de traitement du
+                signal.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Comprendre et mettre en
+                œuvre la technique de modulation OOK (On-Off Keying).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Analyser et visualiser les
+                signaux générés dans le domaine temporel pour valider la
+                transmission.
+              </li>
+            </ul>
+          </div>
+
+          <div class="content-card">
+            <h3><i class="fas fa-cogs"></i> Méthodologie</h3>
+            <p>
+              Nous avons utilisé le logiciel GNU Radio pour la conception du
+              système. Notre approche a suivi un schéma synoptique précis :
+            </p>
+            <br />
+            <ul class="check-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Génération d'une séquence
+                binaire via un bloc <em>Vector Source</em>.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Création de l'onde porteuse
+                avec un <em>Signal Source</em> sinusoïdal.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Multiplication des signaux
+                pour obtenir le signal modulé (OOK - On-Off Keying).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Visualisation en temps réel
+                via des puits <em>(Time Sink)</em>.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-right">
+          <div class="content-card">
+            <h3>Défis rencontrés</h3>
+            <ul class="bullet-list">
+              <li>
+                <strong>Sensibilité au bruit :</strong> Blocages persistants sur
+                le NAT et le filtrage. Résolus par une documentation rigoureuse
+                et des tests unitaires méthodiques.
+              </li>
+              <li>
+                <strong>Synchronisation :</strong> La gestion du débit (Sample
+                Rate) et du bloc <em>Repeat</em> a été cruciale pour obtenir un
+                signal visualisable et cohérent.
+              </li>
+            </ul>
+          </div>
+          <div class="content-card apprenticeships-card">
+            <h3><i class="fas fa-lightbulb"></i> Apprentissages</h3>
+            <ul class="check-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Maîtrise de l'outil de
+                simulation GNU Radio.
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Compréhension pratique de la
+                modulation d'amplitude (OOK/ASK).
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Capacité à analyser des
+                signaux dans le domaine temporel.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="content-card project-gallery">
+        <h3><i class="fas fa-images"></i> Captures d'écran & Schémas</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="../Images/sae31_circuit_gnuradio.png"
+              alt="Circuit_GNURadio"
+            />
+            <p>Schéma de notre circuit sur GNU Radio</p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="../Images/sae31_Schema_synoptique.png"
+              alt="Schéma_synoptique"
+            />
+            <p>Schéma synoptique</p>
+          </div>
+        </div>
+      </section>
+      <section class="content-card results-card">
+        <h3><i class="fas fa-trophy"></i> Résultats</h3>
+        <p>
+          La conception sur GNU Radio a permis de valider avec succès la
+          transmission des données binaires. Bien que simple, cette modulation
+          m'a permis de comprendre les bases fondamentales des
+          télécommunications numériques. Ce projet souligne l'importance du
+          compromis entre simplicité de mise en œuvre et robustesse face au
+          bruit dans le choix d'un système de transmission.
+        </p>
+      </section>
+
+      <div class="bottom-actions">
+        <a href="projets.html" class="btn-primary-back"
+          >Retour à tous les projets</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-copyright">
+          <p>&copy; 2026 Dubuc Rémi. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

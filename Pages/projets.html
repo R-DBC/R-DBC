@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Rémi Dubuc</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="../Images/logo.png" />
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="logo">RD Portfolio</div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="mobile-nav">
+          <ul>
+            <li><a href="../index.html" >Accueil</a></li>
+            <li><a href="a_propos.html">À propos</a></li>
+            <li><a href="formation.html">Formation</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+            <li><a href="projets.html"class="active">Projets</a></li>
+            <li><a href="bilan.html">Bilan</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-title-section">
+                <h1>Mes Projets</h1>
+                <p>Découvrez mes réalisations en cybersécurité, réseaux, Iot et télécoms</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <section class="project-filters">
+                <div class="filter-controls">
+                    <button class="filter-icon"><i class="fas fa-filter"></i></button>
+                    <button class="filter-btn active" data-filter="tous">Tous</button>
+                    <button class="filter-btn" data-filter="cybersécurité">Cybersécurité</button>
+                    <button class="filter-btn" data-filter="réseaux">Réseaux</label>
+                    <button class="filter-btn" data-filter="iot">Iot & Programmation</button>
+                    <button class="filter-btn" data-filter="telecoms">Télécoms</button>
+                </div>
+            </section>
+            
+            <section class="projects-grid">
+                
+                <div class="project-card" data-category="cybersécurité">
+                    <div class="project-image-container">
+                        <img src="../Images/sae61_img_garde.jpg" alt="Réagir face à une cyber-attaque" class="project-image">
+                        <span class="project-year">2026</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-cyber">Cybersécurité</span>
+                        <h3>SAÉ 61 - Réagir face à une cyber-attaque</h3>
+                        <p>Simulation de cyberattaques pour en évaluer l'impact, avant de mettre en place des mesures de protection et de durcissement des systèmes.</p>
+                        
+                        <div class="tech-tags"><span class="tag">A suivre</span><span class="tag">A suivre</span><span class="tag">A suivre</span><span class="tag">A suivre</span></div>
+
+                        <div class="project-actions">
+                            <a href="projet-sae61.html" class="action-btn code-btn">
+                                <i class="fas fa-eye"></i> Détails du projet</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="réseaux">
+                    <div class="project-image-container">
+                        <img src="../Images/sae41_img_garde.jpg" alt="SAÉ 41 - Sécuriser un Système d'Information" class="project-image">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-reseaux">Réseaux</span>
+                        <h3>SAÉ 41 - Sécuriser un Système d'Information</h3>
+                        <p>Mise en place d'une infrastructure réseau fiable et protégée contre les menaces potentielles.</p>
+                        <div class="tech-tags"><span class="tag">Routage</span><span class="tag">Firewall</span><span class="tag">Tests de sécurité</span><span class="tag">Documentation</span></div>
+                        <div class="project-actions">
+                            <a href="projet-sae41.html" class="action-btn code-btn">
+                                <i class="fas fa-eye"></i> Détails du projet</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="iot">
+                    <div class="project-image-container">
+                        <img src="../Images/sae32_m5stack.jpg" alt="SAÉ 32 - Développer des applications communicantes" class="project-image">
+                        <span class="project-year">2023</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-iot">Iot</span>
+                        <h3>SAÉ 32 - Développer des applications communicantes</h3>
+                        <p>Programmer et implémenter des protocoles de communication en langage C, sur des cartes M5Stack</p>
+                        <div class="tech-tags"><span class="tag">Programmation C</span><span class="tag">IoT</span><span class="tag">Correction d’erreurs</span><span class="tag">Protocoles réseaux</span></div>
+                        <div class="project-actions">
+                            <a href="projet-sae32.html" class="action-btn code-btn">
+                                <i class="fas fa-eye"></i> Détails du projet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="iot">
+                    <div class="project-image-container">
+                        <img src="../Images/sae512_kitleaps.png" alt="SAÉ 512 – Géolocalisation Indoor Haute Précision (RTLS)" class="project-image">
+                        <span class="project-year">2026</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-iot">Iot</span>
+                        <h3>SAÉ 512 – Géolocalisation Indoor Haute Précision (RTLS)</h3>
+                        <p>Mise en œuvre d'une solution de suivi en temps réel via technologie Ultra Wideband (UWB) à la Maison Intelligente de Blagnac.</p>
+                        <div class="tech-tags"><span class="tag">IoT</span><span class="tag">UWB</span><span class="tag">MQTT</span><span class="tag">Node-RED</span><span class="tag">SQLite</span><span class="tag">Raspberry Pi</span></div>
+                        <div class="project-actions">
+                            <a href="projet-sae512.html" class="action-btn code-btn">
+                                <i class="fas fa-eye"></i> Détails du projet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="telecoms">
+                    <div class="project-image-container">
+                        <img src="../Images/sae31_ASK.png" alt="SAÉ 31 - Conception d’un système en modulation ASK" class="project-image">
+                        <span class="project-year">2024</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category category-telecoms">Télécoms</span>
+                        <h3>SAÉ 31 - Conception d’un système en modulation ASK</h3>
+                        <p>Création d'un système de transmission numérique basé sur la modulation ASK (Amplitude Shift Keying)</p>
+                        <div class="tech-tags"><span class="tag">GNU Radio</span><span class="tag">Modulation ASK</span><span class="tag">Simulation</span><span class="tag">Traitement du signal</span></div>
+                        <div class="project-actions">
+                            <a href="projet-sae31.html" class="action-btn code-btn">
+                                <i class="fas fa-eye"></i> Détails du projet</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>À propos</h3>
+                    <p>Dubuc Rémi - Étudiant en Informatique</p>
+                    <p>Spécialisé en Réseaux & Cybersécurité</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="cv.html">Mon CV</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-moi</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/remi-dubuc" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="contact.html" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Dubuc Rémi. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            // Fonction de filtrage
+            function filterProjects(filterValue) {
+                
+                // Masquer/Afficher les cartes
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    
+                    if (filterValue === 'tous' || cardCategory === filterValue) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Écoute des clics sur les boutons de filtre
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    
+                    // Récupérer la valeur du filtre à partir de l'attribut data-filter
+                    const filterValue = this.getAttribute('data-filter'); 
+
+                    // Mettre à jour la classe 'active'
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Appliquer le filtrage
+                    filterProjects(filterValue);
+                });
+            });
+            
+            // Initialisation : s'assurer que le filtre "Tous" (ou le filtre actif) est appliqué au chargement
+            const initialFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+            filterProjects(initialFilter); 
+        });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerBtn = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector("#mobile-nav");
+
+        hamburgerBtn.addEventListener("click", function () {
+          // Basculer la classe 'is-open' sur la balise nav pour l'afficher/masquer
+          navMenu.classList.toggle("is-open");
+
+          // Mise à jour de l'attribut aria-expanded pour l'accessibilité
+          const isExpanded =
+            hamburgerBtn.getAttribute("aria-expanded") === "true" || false;
+          hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
+        });
+      });
+    </script>
+</body>
+</html>
